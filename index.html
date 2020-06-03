@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/icons/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="search"><input type="search" placeholder="Search"><button><i class="fas fa-search"></i></button></div>
+    </header>
+    <main class="content">
+        <table>
+            <thead>
+                <tr class="titles">
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Cargo</th>
+                    <th>E-Mail</th>
+                </tr>
+            </thead>
+        </table>
+        <button class="add" type="submit">Add<i class="fas fa-user-plus"></i></button>
+    </main>
+    <div class="register">
+        <form>
+            <h1>Register</h1>
+            <div class="ajust"><i class="fas fa-user"></i><input type="text" name="name" placeholder="Name"></div>
+            <div class="ajust"><i class="fas fa-phone"></i><input type="number" name="phone" placeholder="Phone number"></div>
+            <div class="ajust"><i class="fas fa-envelope"></i><input type="email" name="email" placeholder="Your e-mail" ></div>
+            <div class="ajust"><i class="fas fa-briefcase"></i><input type="text" name="work" placeholder="Ocupation"></div>
+            <button onclick="register()">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
